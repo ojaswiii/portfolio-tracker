@@ -8,6 +8,8 @@ const tradeRouter=require('./routes/tradeRoutes')
 
 const app=express();
 
+app.use(express.json());
+
 const PORT = process.env.PORT || 3300;
 
 app.use('/api/v1/portfolio', portfolioRouter);
