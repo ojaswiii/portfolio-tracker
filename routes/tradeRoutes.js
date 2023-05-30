@@ -5,6 +5,7 @@ const tradeController=require('./../controllers/tradeController')
 
 router
 .route('/')
-.get(tradeController.getTrade)
+.get(tradeController.getTrades)
+.post(tradeController.addTrade)
 
 module.exports= router;
